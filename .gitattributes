@@ -1,4 +1,7 @@
+# Ref: https://help.github.com/articles/dealing-with-line-endings/
+
 # Auto detect text files and perform LF normalization
+# Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
 
 # Custom for Visual Studio
@@ -7,11 +10,28 @@
 # Standard to msysgit
 *.doc	 diff=astextplain
 *.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
+*.docx	 diff=astextplain
+*.DOCX	 diff=astextplain
+*.dot	 diff=astextplain
+*.DOT	 diff=astextplain
+*.pdf	 diff=astextplain
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.c 	 text
+*.h 	 text
+*.html	 text
+*.php	 text
+*.xml	 text
+*.css	 text
+*.scss	 text
+*.sass	 text
+
+# Denote all files that are truly binary and should not be modified.
+*.png	 binary
+*.jpg	 binary
+*.gif	 binary

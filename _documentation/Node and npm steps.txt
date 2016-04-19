@@ -1,0 +1,28 @@
+install node.js from https://nodejs.org/en/
+	Windows installer includes npm
+
+	Make sure to not install in Program Files nor Program Files (x86) folders
+	I installed mine @ C:\nodejs
+	
+	Make sure the nodejs folder is added PATH variable in Environment Variables
+	
+Go in your project folder
+
+create npm config
+	Create/copy package.json file
+	npm install
+	
+install grunt 
+	Create/copy Gruntfile.js file
+	npm install grunt
+
+
+	
+Will need Git
+	Git for Windows: https://git-for-windows.github.io/
+	GitHub for Windows - if you want to use GUI for GitHub repos
+	Bitbucket for Windows - if you want to use GUI for team private repo
+
+Git config
+	To do in admin mode
+		git config --system core.longpaths true
